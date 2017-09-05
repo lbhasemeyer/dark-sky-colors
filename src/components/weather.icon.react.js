@@ -2,9 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 
 class WeatherIcon extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     //build the weather icon / dropArray of icons with animation classes
     var weatherIcon;
