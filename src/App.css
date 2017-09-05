@@ -1,0 +1,86 @@
+.App {
+	text-align: center;
+}
+.App-header {
+	height: 150px;
+	padding: 20px;
+}
+.big-icon {
+	margin-top: 100px;
+	height: 200px;
+}
+
+/*spinning icons*/
+.big-icon.spinning-icon {
+	animation: icon-spin infinite 20s linear;
+}
+@keyframes icon-spin {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(360deg); }
+}
+
+/*falling icons*/
+.falling {
+	width: 100px;
+	height: 100px;
+	margin-top: -300px;
+	position:relative;
+	animation:falling 6s;
+	-webkit-animation:falling 6s;
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+}
+@keyframes falling {
+	0% {top:-300px;}
+	100% {top:1500px;}
+}
+@-webkit-keyframes falling {
+	0% {top:-300px;}
+	100% {top:1500px;}
+}
+.falling0 {
+	margin-left: 90vw;
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+.falling1 {
+	margin-left: 25vw;	
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+.falling2 {
+	margin-left: 80vw;
+	animation-delay:1s;
+	-webkit-animation-delay:1s;
+}
+.falling3 {
+	margin-left: 40vw;
+	animation-delay:2s;
+	-webkit-animation-delay:2s;
+}
+.falling4 {
+	margin-left: 120vw;
+	animation-delay:3s;
+	-webkit-animation-delay:3s;
+}
+
+/*sliding icons*/
+.big-icon.sliding-icon {
+	position:relative;
+	animation:blowing 6s;
+	-webkit-animation:blowing 6s;
+	animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+}
+@keyframes blowing {
+	0% {left: 700px;}
+	100% {left: -750px;}
+}
+@-webkit-keyframes blowing {
+	0% {left: 700px;}
+	100% {left: -750px;}
+}
